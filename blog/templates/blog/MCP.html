@@ -1,0 +1,29 @@
+{% extends "personal/header.html" %}
+{% load staticfiles %}
+{% block content %}
+<style type="text/css">
+
+
+</style>
+<br><br>
+<br>
+<br>
+
+<div class="padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				
+				<img src="{% static 'personal/img/M2S.jpg' %}">
+			</div>
+			<div class="row-md-6"> 
+				<h3>Heat losing in water pipes</h3>
+				<p>Here you can download the Fortran code and the report.</p>
+				<a id="downloadLink" href="{% static 'personal/img/codeM2S.zip' %}" target="_blank" 
+						class="btn btn-default btn-lg" type="application/octet-stream" download="code">Code</a>
+						<a id="downloadLink" href="{% static 'personal/img/ReportM2S.pdf' %}" target="_blank" 
+						class="btn btn-default btn-lg" type="application/octet-stream" download="Report_Janin">Report</a>
+			</div>
+		</div>
+	</div>
+{% endblock %}

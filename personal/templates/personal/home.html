@@ -1,0 +1,84 @@
+{% extends "personal/header.html" %}
+
+{% load staticfiles %}
+{% block content %}
+<link rel="preload" href="background.jpg" as="image">
+<style type="text/css">
+
+/* Part of the main page */	
+body {
+			background: url("{% static 'personal/img/background.jpg' %}") no-repeat center center fixed; 
+ 			-webkit-background-size: cover;
+ 			-moz-background-size: cover;
+ 			-o-background-size: cover;
+ 		 	background-size: cover; 
+ 		 	font-family: 'Helvetica Neue', sans-serif;
+		 	height:100%;
+		  	width:100%;
+		  	display: table;
+		  	position: relative;
+		}
+			
+		.prof-box {
+			width: 400px;
+			height: 450px;
+			background: rgba(0,0,0,0.15);
+			padding: 20px ;
+			color: white;
+			margin: 0 auto;
+			margin-top:  125px;
+			text-align: center;
+		}
+		h1 {
+			font-weight: 100;
+			letter-spacing: 6;
+			font-size: 30px;
+		}
+	
+		p{
+			font-weight: 200;
+			letter-spacing: 1;
+
+		}
+		.social-icons {
+			font-size: 40px;
+		}
+		.social-icons a{
+			color: white;
+		}
+		.line-break {
+			width: 300px;
+			margin: 0 auto;
+			border-top: 1px solid white;
+		}
+/* END Part of the main page */	
+
+
+</style>
+
+
+<!-- Part of the main page --> 
+<div id="home">	
+<div class="prof-box">	
+	<img src="{% static 'personal/img/profile.jpg' %}"  class="responsive-img" style='border-radius: 50%; height:200px; width: 200px;' alt="face">
+
+	<h1>Jérémie Janin</h1>
+	<h3>Student at ENSGTI</h3>
+	<div class="line-break"></div>
+	<div align="justify">
+	<p>
+		Since my university, I have been passionate by understanding and reproducing physical effects.
+		Numerical simulation is a wonderfull way to get there. One aim of the website is to show people who might be 
+		intersted in my projects. 
+		
+	</p>
+	</div>
+	<!-- <div class="social-icons">
+		<a href="https://fr.linkedin.com/in/jérémie-janin-a19095156" target="_blank"><i  class="fab fa-linkedin" aria-hidden="true" ></i>
+		</a>
+	</div> -->
+</div>
+</div>
+<!-- END Part of the main page --> 	
+
+{% endblock %}

@@ -1,0 +1,134 @@
+{% extends "personal/header.html" %}
+{% load staticfiles %}
+{% block content %}
+<style type="text/css">
+	body {background-color: #EFF5FB
+	}
+
+	.card-img-top{
+			width: 300px;
+			height: 250px;
+			
+			padding: 0px ;
+			color: white;
+			margin: 0 auto;
+			margin-top:  15px;
+	}
+	.line-break {
+			width: 800px;
+			margin: 0 auto;
+			border-top: 1px solid #0B2161;
+		}
+/* END Part o
+
+</style>
+
+<br><br><br>
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">School projects</h1>
+		</div>
+		<div class="line-break"></div>
+		<br>
+	</div>
+</div>
+
+
+<div class="padding">
+	<div class="container">
+		<div class="row">
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="{% static 'personal/img/calculs.jpg' %}">
+				<div class="card-body">
+					<h4 class="card-title">Wood Drying</h4>
+					<p class="card-text"> The goal was to develop a Fortran code which can solve the mass conservation equation based on 
+											the Finite Element Method.</p>
+					
+					<a href="/project/blog/wood/" class="btn btn-default btn-lg">Learn more</a>
+					
+				</div>
+			</div>
+		</div>	
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="{% static 'personal/img/cfd.jpg' %}">
+				<div class="card-body">
+					<h4 class="card-title">Compressible Jet Impact</h4>
+					<p class="card-text"> In this study we are investigating the efficiency of the cooling of electronic componant with a compressible
+											jet. For this study ANSYS FLuent was used.</p>
+					
+					<a href="/project/blog/jet_impact/" class="btn btn-default btn-lg">Learn more</a>
+					
+				</div>
+			</div>
+		</div>	
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="{% static 'personal/img/M2S.jpg' %}">
+				<div class="card-body">
+					<h4 class="card-title">Heat Losing in Water Pipes</h4>
+					<p class="card-text"> Using PCM to stock the heat and saving water was the goal of this study. The Fortran code is based one the 
+											Volume Finite Method. </p>
+					<a href="/project/blog/MCP/" class="btn btn-default btn-lg">Learn more</a>
+				</div>
+			</div>
+		</div>	
+	</div>	
+
+	</div>
+</div>
+
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Internship Reports</h1>
+		</div>
+		<div class="line-break"></div>
+		<br>
+	</div>
+</div>
+<div class="padding">
+	<div class="container">
+		<div class="row">
+		<div class="col-md-4">
+			<div class="card">
+				<!-- <img class="card-img-top" src="{% static 'personal/img/calculs.jpg' %}"> -->
+				<div class="card-body">
+					<h4 class="card-title">Engineer Internship </h4>
+					<p class="card-text"> I worked in Germanny for framatome as a FSI-CFD engineer assistant. The goal of the study was to model 
+										 the behavior of fuel assemblies (HTP design) in accidental situation.</p>
+					
+					<a id="downloadLink" href="/blog" target="_blank" 
+						class="btn btn-default btn-lg" type="application/octet-stream" download="Report_Janin">Dowload Report</a>
+					
+				</div>
+			</div>
+		</div>	
+		<div class="col-md-4">
+			<div class="card">
+				<!--<img class="card-img-top" src="{% static 'personal/img/cfd.jpg' %}"> -->
+				<div class="card-body">
+					<h4 class="card-title">Production Workman Internship</h4>
+					<p class="card-text"> I worked in France for Biason as a factory worker for two months. I was in of a machine cutting the window frames.
+										  It was production therefore I needed to be realiable and performant. </p>
+					
+					<a id="downloadLink" href="{% static 'personal/img/Rapport_Janin.pdf' %}" target="_blank" 
+						class="btn btn-default btn-lg" type="application/octet-stream" download="Rapport_Janin">Dowload Report</a>
+					
+				</div>
+			</div>
+		</div>	
+		
+	</div>	
+
+	</div>
+</div>
+
+
+<!-- <br><br><br><br><br><br><br><br><br><br>
+	{% for post in object_list %}
+		<h5>{{ post.date|date:"Y-m-d" }}<a href="/blog/{{post.id}}">  {{ post.title }}</a></h5>
+	{% endfor %} -->
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends "personal/header.html" %}
+
+{% load staticfiles %}
+{% block content %}
+<script type="text/javascript">
+
+</script>
+<style type="text/css">
+
+	body {
+			background: url("{% static 'personal/img/background_resume.jpg' %}") no-repeat center center fixed; 
+ 			-webkit-background-size: cover;
+ 			-moz-background-size: cover;
+ 			-o-background-size: cover;
+ 		 	background-size: cover; 
+ 		 	font-family: 'Helvetica Neue', sans-serif;
+		 	height:100%;
+		  	width:100%
+		}
+	
+
+	.responsive-img {
+	
+	width: 100px;
+	
+	}
+	.lead {
+		width: 780px;
+		line-height: 25px;
+		letter-spacing: 0.8px;
+		color: #363636;
+	}
+	.line-break {
+			width: 750px;
+
+			border-top: 1px solid white;
+		}
+	
+</style>
+
+
+
+<div class="padding">
+<div class="container">	
+	<div class="row">
+
+			<br><br><br>
+	<h1><b>EDUCATION</b></h1>
+	<div class="line-break"></div>
+	<br>
+	
+	<p class="lead">
+		I am currently undertaking the last year of my Master’s degree specialized in 
+		energy at an engineering school in France, École Nationale Supérieure en Génie des Technologies Industrielles (ENSGTI). My field of studies applies directly to the industrial world. <br>
+	The ENSGTI is a French Engineering School, specialized in energy and process engineering. My main subjects concern fluid mechanics, thermodynamics, heat and mass tranfer. In my speciality, energy, I also study combustion, compressible flow and air handling units. By studying these phenomenons, I am now able to apply them to industrial applications such as ovens, pumps and heat exchangers. I study these equipments, from conception to sizing while always verifying the security of the process. Accordingly, I am learning how to design the latter by programming and by using simulation software, respectively coding in Fortran and Ansys Fluent software. 
+
+	</p>	
+	
+
+
+
+
+<p class="lead">If you want to dowload my resume, 
+
+<a id="downloadLink" href="{% static 'personal/img/CV_Janin.pdf' %}" target="_blank" 
+type="application/octet-stream" download="CV-Janin">click here</a>.</p>
+
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}

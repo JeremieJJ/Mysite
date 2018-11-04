@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Jérémie Janin</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<style type="text/css">
+		
+		body {
+		  height:100%;
+		  width:100%
+		 }
+		.navbar {
+			background-color: #0B2161;
+			padding: 1% 0;
+			font-size:1.2em;
+		}
+		.navar-brand {
+			min-height 30px;
+			padding: 0 15px 5px;
+		}
+		.navbar-default .navbar-nav li a{
+			color: #D5D5D5;
+		}
+		.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active {
+			color: #FFF;
+		}
+		.prof-box {
+			width: 400px;
+			height: 400px;
+			background: rgba(0,0,0,0.4);
+			padding: 40px;
+			color: white;
+			margin: 0 auto;
+			margin-top: 140px
+		}
+	
+	</style>
+
+
+</head>
+
+<body> 
+
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navgation">
+	<div class="container-fluid" >
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Jérémie Janin</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="#">About me</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Resume  </a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="prof-box">
+	<img src="{% static 'personal/img/profile.jpg' %}" class="responsive-img " style='max-height:100px;' alt="face">
+	<h1>Jérémie Janin</h1>
+	<h5>Student at ENSGTI engineer's school </h5>
+	<p>
+	I study thermodynamics...
+	</p>
+</div>
+
+
+
+	
+<footer>
+	<div class="container-fluid" style='margin-left:15px'>
+		<p><a href="#" target="blank">Contact</a> | <a href="#" target="blank" class="fa fa-facebook"></a> | <a href="#" target="blank" class="fa fa-linkedin"></a> 
+	</div>
+</footer>	
+
+</body>
+
+</html>
